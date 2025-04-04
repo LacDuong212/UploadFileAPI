@@ -16,16 +16,17 @@
         android:textSize="25sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewUpload"
+        app:layout_constraintBottom_toTopOf="@+id/avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageViewUpload"
+        android:id="@+id/avatar"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="#77eeeeee"
+        android:clickable="true"
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
@@ -47,7 +48,7 @@
         android:stretchColumns="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageViewUpload">
+        app:layout_constraintTop_toBottomOf="@id/avatar">
 
         <TableRow android:layout_marginBottom="20dp">
 
@@ -56,7 +57,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:text="Mã ID"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -65,7 +66,7 @@
                 android:layout_marginEnd="5dp"
                 android:alpha="0.8"
                 android:text="3"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </TableRow>
 
         <TableRow android:layout_marginBottom="20dp">
@@ -75,8 +76,8 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:text="Tên đăng nhập"
-                android:width="170dp"
-                android:textSize="20sp"
+                android:width="120dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -85,7 +86,7 @@
                 android:layout_marginEnd="5dp"
                 android:alpha="0.8"
                 android:text="lduong"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </TableRow>
 
         <TableRow android:layout_marginBottom="20dp">
@@ -95,7 +96,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:text="Họ và tên"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -104,7 +105,7 @@
                 android:layout_marginEnd="5dp"
                 android:alpha="0.8"
                 android:text="Võ Nguyễn Hòa Lạc Dương"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </TableRow>
 
         <TableRow android:layout_marginBottom="20dp">
@@ -114,7 +115,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:text="Email"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -123,7 +124,7 @@
                 android:layout_marginEnd="5dp"
                 android:alpha="0.8"
                 android:text="lacduongldg212@gmail.com"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </TableRow>
 
         <TableRow android:layout_marginBottom="20dp">
@@ -133,7 +134,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:text="Giới tính"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -142,7 +143,7 @@
                 android:layout_marginEnd="5dp"
                 android:alpha="0.8"
                 android:text="Male"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
         </TableRow>
 
     </TableLayout>
