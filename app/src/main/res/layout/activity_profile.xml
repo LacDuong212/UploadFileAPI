@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Hồ sơ cá nhân"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewUpload"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#77eeeeee"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#77eeeeee"
+        android:maxHeight="360dp"
+        android:minHeight="100dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewUpload">
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Mã ID"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_id_value"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.8"
+                android:text="3"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Tên đăng nhập"
+                android:width="170dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_username_value"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.8"
+                android:text="lduong"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Họ và tên"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_name_value"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.8"
+                android:text="Võ Nguyễn Hòa Lạc Dương"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Email"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_email_value"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.8"
+                android:text="lacduongldg212@gmail.com"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Giới tính"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_gender_value"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.8"
+                android:text="Male"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Đăng xuất"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
